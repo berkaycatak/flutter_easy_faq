@@ -11,29 +11,50 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+![Screenshot](https://github.com/berkaycatak/flutter_easy_faq/assets/34205493/b26b89c8-d5ee-4c0e-b7c7-6632fe6c4932)
+
 
 ## Features
+Prepare your animated faq list easily.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Installation
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add package to the the pubspec.yaml.
+
+```dart
+flutter_easy_faq:
+```
+
+Import the package.
+
+```dart
+import 'package:flutter_easy_faq/easy_faq.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+EasyFaq(
+    question: "question?",
+    answer: "answer.",
+),
 ```
 
-## Additional information
+## Properties
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+  required String question;
+  required String answer;
+  TextStyle? questionTextStyle;
+  TextStyle? anserTextStyle;
+  Duration? duration = const Duration(milliseconds: 100);
+  Widget? expandedIcon;
+  Widget? collapsedIcon;
+  Color? backgroundColor;
+  BorderRadiusGeometry? borderRadius;
+  EdgeInsetsGeometry? padding = const EdgeInsets.symmetric(
+    horizontal: 16,
+    vertical: 10,
+  );
+```

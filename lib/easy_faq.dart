@@ -74,7 +74,7 @@ class _FaqWidgetState extends State<EasyFaq> with TickerProviderStateMixin {
                     Expanded(
                       child: Text(
                         widget.question,
-                        style:
+                        style: widget.questionTextStyle ??
                             Theme.of(context).textTheme.titleMedium!.copyWith(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 14,
@@ -99,9 +99,10 @@ class _FaqWidgetState extends State<EasyFaq> with TickerProviderStateMixin {
                   const SizedBox(height: 10),
                   Text(
                     widget.answer,
-                    style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          fontSize: 13,
-                        ),
+                    style: widget.anserTextStyle ??
+                        Theme.of(context).textTheme.titleSmall!.copyWith(
+                              fontSize: 13,
+                            ),
                   ),
                 ],
               ],
