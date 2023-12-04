@@ -1,6 +1,6 @@
 // ignore_for_file: must_be_immutable
 
-library easy_faq;
+library flutter_easy_faq;
 
 import 'package:flutter/material.dart';
 
