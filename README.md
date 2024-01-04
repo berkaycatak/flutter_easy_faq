@@ -48,7 +48,7 @@ EasyFaq(
   required String answer;
   TextStyle? questionTextStyle;
   TextStyle? anserTextStyle;
-  Duration? duration = const Duration(milliseconds: 100);
+  Duration? duration = const Duration(milliseconds: 120);
   Widget? expandedIcon;
   Widget? collapsedIcon;
   Color? backgroundColor;
