@@ -1,10 +1,10 @@
 name: flutter_easy_faq
-description: 'This package to display FAQs in your Flutter projects as a custom widget.'
-version: 1.0.0
+description: "This package to display FAQs in your Flutter projects as a custom widget."
+version: 1.0.1
 homepage: https://github.com/berkaycatak/flutter_easy_faq
 
 environment:
-  sdk: '>=3.2.2 <4.0.0'
+  sdk: ">=3.2.2 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

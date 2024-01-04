@@ -48,17 +48,17 @@ class _FaqWidgetState extends State<EasyFaq> with TickerProviderStateMixin {
           isExpanded = !isExpanded;
         });
       },
-      child: AnimatedSize(
-        duration: widget.duration ??
-            (isExpanded
-                ? const Duration(milliseconds: 100)
-                : const Duration(milliseconds: 50)),
-        child: Card(
-          margin: EdgeInsets.zero,
-          color: widget.backgroundColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: widget.borderRadius ?? BorderRadius.circular(10),
-          ),
+      child: Card(
+        margin: EdgeInsets.zero,
+        color: widget.backgroundColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: widget.borderRadius ?? BorderRadius.circular(10),
+        ),
+        child: AnimatedSize(
+          duration: widget.duration ??
+              (isExpanded
+                  ? const Duration(milliseconds: 120)
+                  : const Duration(milliseconds: 80)),
           child: Container(
             padding: widget.padding ??
                 const EdgeInsets.symmetric(
